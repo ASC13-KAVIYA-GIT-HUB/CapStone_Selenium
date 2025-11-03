@@ -1,0 +1,85 @@
+Started by user Kaviya H R 
+Running as SYSTEM
+Building in workspace C:\Users\kaviya\.jenkins\workspace\Nykaa
+[Nykaa] $ cmd /c call C:\Users\KAVIYA~1.K\AppData\Local\Temp\jenkins5818593688524814618.bat
+
+C:\Users\kaviya\.jenkins\workspace\Nykaa>cd C:\Users\kaviya\git\Nykaa_SeleniumProject\Nov2025 
+
+C:\Users\kaviya\git\Nykaa_SeleniumProject\Nov2025>mvn clean test 
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.nykaa:nykaa-automation:jar:1.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-compiler-plugin @ line 97, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ---------------------< com.nykaa:nykaa-automation >---------------------
+[INFO] Building nykaa-automation 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ nykaa-automation ---
+[INFO] Deleting C:\Users\kaviya\git\Nykaa_SeleniumProject\Nov2025\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ nykaa-automation ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.10.1:compile (default-compile) @ nykaa-automation ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 9 source files to C:\Users\kaviya\git\Nykaa_SeleniumProject\Nov2025\target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ nykaa-automation ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 312 resources from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.10.1:testCompile (default-testCompile) @ nykaa-automation ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to C:\Users\kaviya\git\Nykaa_SeleniumProject\Nov2025\target\test-classes
+[INFO] 
+[INFO] --- surefire:3.0.0:test (default-test) @ nykaa-automation ---
+[INFO] Using auto detected provider org.apache.maven.surefire.testng.TestNGProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 142.0.7444.59 (resolved driver for Chrome 142)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kaviya\.cache\selenium\chromedriver\win64\142.0.7444.59\chromedriver.exe
+Nov 02, 2025 9:43:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 142
+Nov 02, 2025 9:43:11 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 142.0.7444.59. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Opened Nykaa homepage
+Clicked element: By.xpath: //button[contains(., 'Sign in') or contains(., 'Login')]
+Clicked element: By.xpath: //button[contains(., 'Sign in with Mobile / Email')]
+?Typed text into: By.xpath: //input[@type='tel' or @placeholder='Enter Phone Number']
+Clicked element: By.className: css-15q5a8e
+OTP sent   please enter it manually within 30 seconds...
+?Typed text into: By.xpath: //input[contains(@placeholder, 'Search')]
+Searching for: Sephora Lipstick
+Clicked element: By.cssSelector: .wishlist_button_text.css-17jex54
+Clicked element: By.cssSelector: .css-xrzmfa
+ Switched to product tab
+Clicked element: By.cssSelector: .btn-text
+ Added product to bag
+Clicked element: By.id: header-bag-icon
+Opened shopping bag
+Clicked element: By.cssSelector: .css-1l90yrs
+Proceeded to checkout
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 96.668 s - in TestSuite
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:25 min
+[INFO] Finished at: 2025-11-02T21:44:42+05:30
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS
